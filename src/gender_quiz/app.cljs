@@ -257,7 +257,7 @@
           "Your gender is: "
           (dom/strong (:name gender)))
         (when (seq (:image gender))
-          (dom/p (dom/img {:src (str "/img/" (:image gender))})))
+          (dom/p (dom/img {:src (str "img/" (:image gender))})))
         (dom/p
           (for [part (:desc gender)]
             (cond
