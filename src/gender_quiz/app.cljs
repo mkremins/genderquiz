@@ -5,17 +5,18 @@
             [om-tools.core :refer-macros [defcomponent]]
             [om-tools.dom :as dom]))
 
-(defonce us-states
+(defonce us-states-and-territories
   ["Alabama" "Alaska" "Arizona" "Arkansas" "California" "Colorado" "Connecticut" "Delaware" "Florida" "Georgia"
    "Hawaii" "Idaho" "Illinois" "Indiana" "Iowa" "Kansas" "Kentucky" "Louisiana" "Maine" "Maryland" "Massachusetts"
    "Michigan" "Minnesota" "Mississippi" "Missouri" "Montana" "Nebraska" "Nevada" "New Hampshire" "New Jersey"
    "New Mexico" "New York" "North Carolina" "North Dakota" "Ohio" "Oklahoma" "Oregon" "Pennsylvania" "Rhode Island"
    "South Carolina" "South Dakota" "Tennessee" "Texas" "Utah" "Vermont" "Virginia" "Washington" "West Virginia"
-   "Wisconsin" "Wyoming"])
+   "Wisconsin" "Wyoming" "American Samoa" "Guam" "Northern Mariana Islands" "Puerto Rico" " US Virgin Islands"
+   "US Minor Outlying Islands"])
 
-(defn gen-thirteen-us-states []
-  (let [states (rand/pick-n 13 us-states)]
-    (str (str/join ", " (take 12 states)) ", or " (last states))))
+(defn gen-thirteen-us-states-and-territories []
+  (let [states-territories (rand/pick-n 13 us-states-and-territories)]
+    (str (str/join ", " (take 12 states-territories)) ", or " (last states-territories))))
 
 (defn gen-boundingbox-candlestash []
   (let [fname (rand-nth ["BOUNDINGBOX" "BOBOLINK" "BOTHERSTICK" "BATTLEFLICK" "BANNERCLICK" "BOONDOGGLE"])
@@ -84,9 +85,9 @@
            "and the door had been locked from the inside. What's more, the police are useless! Who can possibly "
            "piece together the evidence to solve the perfect crime? This looks like a case for… "
            [:func gen-boundingbox-candlestash] "!"]}
-   {:name "BANNED IN THIRTEEN US STATES"
+   {:name "BANNED IN THIRTEEN US STATES AND TERRITORIES"
     :image "banned.png"
-    :desc ["Better not be thinking of taking a trip to " [:func gen-thirteen-us-states] " anytime soon, "
+    :desc ["Better not be thinking of taking a trip to " [:func gen-thirteen-us-states-and-territories] " anytime soon, "
            "‘cause with a gender like this, you won't be going anywhere! Except maybe to jail."]}
    {:name "DOGE"
     :image "doge.jpeg"
