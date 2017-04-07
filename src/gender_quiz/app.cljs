@@ -299,7 +299,8 @@
           (om/build gender-view data))
       (dom/div {:class "sneaky"}
         (dom/a {:href "https://twitter.com/maxkreminski"} "@maxkreminski")
-        " made this mess"))))
+        " made this mess  •  "
+        (dom/a {:href "https://mkremins.itch.io/genderquiz/donate"} "donate")))))
 
 (defn init! []
   (enable-console-print!)
