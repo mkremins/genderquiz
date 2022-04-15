@@ -171,6 +171,16 @@
     :image "thisisfine.png"
     :desc ["Seriously, it’s completely fine. Nothing wrong here at all. This is a totally acceptable and normal "
            "gender with which to find yourself."]}
+   {:name "FEDORA"
+    :image "fedora.png"
+    :desc ["You're like a neckbeard, but not an incel neckbeard. Just a normal neckbeard. You probably wear a trenchcoat as well as own"
+           "multiple fedoras. Also probably ties for every holiday"]}
+   {:name "SWORD"
+    :image "sword.png"
+    :desc ["Ouch, pointy. "]}
+   {:name "NINTENDO SWITCH"
+    :image "nintendoswitch.png"
+    :desc ["You're small, like to be held/shaken by people, basically everyone likes you. Also you do a lot of things and have detachable parts"]}
    ;{:name ""
    ; :image ""
    ; :desc [""]}
