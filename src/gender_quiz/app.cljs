@@ -115,7 +115,7 @@
            "Platonic solids. It has 6 faces, 12 edges, and 8 vertices."]}
    {:name "FERN"
     :image "fern.jpg"
-    :desc ["Your gender is is a member of a group of about 10,560 known extant species of vascular plants "
+    :desc ["Your gender is a member of a group of about 10,560 known extant species of vascular plants "
            "that reproduce via spores and have neither seeds nor flowers. They differ from mosses by being "
            "vascular, i.e., having certain tissue that conducts water and nutrients. They have branched stems "
            "and leaves like other vascular plants."]}
